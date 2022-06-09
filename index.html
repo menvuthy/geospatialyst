@@ -1,29 +1,51 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Importing openlayers library -->
-    <link rel="stylesheet" href="./assets/ol/ol.css" type="text/css">
-    <!-- <script src="./assets/ol/ol.js"></script> -->
-    <script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
-    <!-- Custom style file -->
-    <link rel="stylesheet" href="style.css" type="text/css">
-   <!-- FontAwesome CSS -->
-   <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
-
-  <!-- Proj4js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.4.4/proj4.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-
-  <title>Openlayers basic</title>
+    <title>Geospatialyst</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
 </head>
 <body>
-    <h1> Openlayers map</h1>
-    <div id="map" class='map'></div>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo-for-black-background.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-bars" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">PROJECTS</a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<div class="text-box" >
+    <p>GIS AND REMOTE SENSING CONSULTANT</p>
+    <h1>We Make GIS and Remote Sensing Easy</h1>
+    <p></p>
+    <a href="" class="hero-btn">Our Services</a>
 
-    <script src="main.js"></script>
+</div>
+    </section>
+
+
+<script>
+    var navLinks = document.getElementById('navLinks');
+    function  showMenu(){
+        navLinks.style.right = '0';
+    } 
+    function  hideMenu(){
+        navLinks.style.right = '-200px';
+    } 
+</script>
+
 </body>
 </html>
