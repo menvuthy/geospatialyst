@@ -1,0 +1,12 @@
+.map{
+    width: 100%;
+    height: 800px;
+}
+
+.get-view {
+    top: 5px;
+    right: .5em;
+  }
+  .ol-touch .get-view {
+    top: 80px;
+  }
