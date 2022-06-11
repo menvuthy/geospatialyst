@@ -8,35 +8,101 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img src="images/logo-for-black-background.png" alt=""></a>
             <div class="nav-links" id="navLinks">
-                <i class="fa fa-bars" onclick="hideMenu()"></i>
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
-                    <li><a href="">BLOG</a></li>
+                    <li><a href="">ABOUT</a></li>
                     <li><a href="">PROJECTS</a></li>
                     <li><a href="">SERVICES</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">CONTACT US</a></li>
+                    <li><a href="">MAPS</a></li>
+                    <li><a href="" class="hero-btn-cntc">CONTACT</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 <div class="text-box" >
-    <p>GIS AND REMOTE SENSING CONSULTANT</p>
-    <h1>We Make GIS and Remote Sensing Easy</h1>
-    <p></p>
-    <a href="" class="hero-btn">Our Services</a>
+    <h1>Bringing Efficiency<br>to Your Business through<br>GIS & Remote Sensing Solutions</h1>
+    <p>GEOSPATIALYST | Cambodian GIS & Remote Sensing Consultant</p>
+    <a href="" class="hero-btn">WHAT WE DO</a>
 
 </div>
-    </section>
+</section>
+
+<section class="blog">
+    <h1>Industries we support</h1>
+    <p>Geospatialyst supports a variety of industries with the goal of aligning Geographic Information Systems (GIS) <br>and Remote Sensing best-practices with our clients' needs. We're proud to provide highly adaptable <br>and customized solutions for our clients.</p>
+
+    <div class="row">
+        <div class="blog-col">
+            <h3>Agriculture</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="blog-col">
+            <h3>Water Supply</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="blog-col">
+            <h3>Environment</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="blog-col">
+            <h3>Agriculture</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="blog-col">
+            <h3>Water Supply</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="blog-col">
+            <h3>Environment</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- Projects we achieved -->
+<section class="project">
+    <h1>Project we achieved</h1>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+    <div class="row">
+        <div class="project-col">
+            <img src="images/lena_delta.webp" alt="">
+            <div class="layer">
+                <h3>The Lena River</h3>
+            </div>
+
+        </div>
+        <div class="project-col">
+            <img src="images/ganges_delta.webp" alt="">
+            <div class="layer">
+                <h3>The Ganges River</h3>
+            </div>
+
+        </div>
+        <div class="project-col">
+            <img src="images/Mississippi.webp" alt="">
+            <div class="layer">
+                <h3>The Mississippi River Delta</h3>
+            </div>
+
+        </div>
+
+    </div>
+</section>
 
 
+<!-- JavaScript for Toggle Menu -->
 <script>
     var navLinks = document.getElementById('navLinks');
     function  showMenu(){
