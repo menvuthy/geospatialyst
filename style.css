@@ -232,7 +232,7 @@ p{
     width: 100%;
     font-weight: 500;
     color: white;
-    font-size: 26px;
+    font-size: 20px;
     bottom: 0;
     left: 50%;
     transform: translate(-50%);
@@ -264,6 +264,12 @@ p{
         bottom: 40%;
         font-size: 20px;
     }
-    }
-    
+}
+
+/* Partners */
+.partner{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;    
 }
