@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geospatialyst</title>
+    <link rel="stylesheet" href="projects/style-projects.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <video autoplay muted loop class="background-video" src="projects/images/background-video.mp4"></video>
+
+        <nav>
+            <a href="index.html"><img src="img/logo-for-black-background.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="">MAPS</a></li>
+                    <li><a href="" class="hero-btn-cntc">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<div class="text-box" >
+    <!-- <h1>GEOSPATIALYST | <span class="h1color">WHO WE ARE</span></h1> -->
+    <h1>PROJECTS</h1>
+    <p>GEOSPATIALYST<br>Cambodian GIS & Remote Sensing Consultant</p>
+    <!-- <a href="" class="hero-btn">WHAT WE DO</a> -->
+
+</div>
+</section>
+
+<section class="blog">
+    <h1>Industries we support</h1>
+    <p>Geospatialyst supports a variety of industries with the goal of aligning Geographic Information Systems (GIS) <br>and Remote Sensing best-practices with our clients' needs. We're proud to provide highly adaptable <br>and customized solutions for our clients.</p>
+
+    <div class="row">
+        <div class="blog-col">
+            <h3>Agriculture</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="blog-col">
+            <h3>Water Supply</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+        <div class="blog-col">
+            <h3>Environment</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- ///////////////////////////////////////////////////////////////////////// -->
+<!-- JavaScript for Toggle Menu -->
+<script>
+    var navLinks = document.getElementById('navLinks');
+    function  showMenu(){
+        navLinks.style.right = '0';
+    } 
+    function  hideMenu(){
+        navLinks.style.right = '-200px';
+    } 
+</script>
+</body>
+</html>
