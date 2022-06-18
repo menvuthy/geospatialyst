@@ -8,67 +8,59 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
 
+    <title>Geospatialyst</title>
+    <link rel="stylesheet" href="map/style-map.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
     <title>Interactive Map</title>
-    <style>
-        #map{
-            width: 100%;
-            height: 100vh;
-        }
-    </style>
     
 </head>
-<body style="background-color:black;">
-    <h1 style="color:white;">Geospatialyst - Map</h1>
-    <div id="map"></div>
+<body style="background-color:#00001c;">
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/logo-for-black-background.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="">MAPS</a></li>
+                    <li><a href="" class="hero-btn-cntc">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
 
+    <div class="map" id="map"></div>
+</section>
+
+
+
+
+
+<!-- ///////////////////////////////////////////////////////////////////////// -->
+    <script src="./map/data/river.js"></script>
+    <script src="./map/data/commune-cambo.js"></script>
+    <!-- map must be at bottom -->
     <script src="./map/map.js"></script>
     
+<!-- ///////////////////////////////////////////////////////////////////////// -->
+<!-- JavaScript for Toggle Menu -->
+<script>
+    var navLinks = document.getElementById('navLinks');
+    function  showMenu(){
+        navLinks.style.right = '0';
+    } 
+    function  hideMenu(){
+        navLinks.style.right = '-200px';
+    } 
+</script>
     
 </body>
 </html>
-
-<script src="./map/data/river.js"></script>
-<script src="./map/data/commune-cambo.js"></script>
-
-<script>
-
-// var map = L.map('map').setView([11.558478021687254, 104.93110656738283], 13);
-var map = L.map('map').setView([11.558478021687254, 104.93110656738283], 7);
-
-
-// Tile Layer
-// var Jawg_Matrix = L.tileLayer('https://{s}.tile.jawg.io/jawg-matrix/{z}/{x}/{y}{r}.png?access-token={accessToken}', {
-// 	attribution: '<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-// 	minZoom: 0,
-// 	maxZoom: 22,
-// 	subdomains: 'abcd',
-// 	accessToken: 'wMEmropxqcsYlDx4SuPcdYeiHzjdaoX6co0HBAxfeupmdQ9D7MlyvQV6zqr3pZHH'
-// }).addTo(map);
-
-var Jawg_Dark = L.tileLayer('https://{s}.tile.jawg.io/jawg-dark/{z}/{x}/{y}{r}.png?access-token={accessToken}', {
-	attribution: '<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-	minZoom: 0,
-	maxZoom: 22,
-	subdomains: 'abcd',
-	accessToken: 'wMEmropxqcsYlDx4SuPcdYeiHzjdaoX6co0HBAxfeupmdQ9D7MlyvQV6zqr3pZHH'
-}).addTo(map);
-
-
-var options = {
-    style:{
-        opacity: 1,
-        weight: 1,
-        color: 'yellow',
-    }
-};
-
-// var riverLayer = L.geoJSON(riverJSON).addTo(map);
-
-var commune = L.geoJSON(communeJSON, options).addTo(map);
-
-// zoom the map to the polygon
-map.fitBounds(commune.getBounds());
-
-</script>
 
