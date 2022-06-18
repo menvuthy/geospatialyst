@@ -1,5 +1,10 @@
 // Adding Map
-var map = L.map('map').setView([12.410348655627436, 105.29296875], 7);
+var map = new L.Map('map', {
+    fullscreenControl: true,
+    fullscreenControlOptions: {
+      position: 'topleft'
+    }
+  }).setView([12.248458308145507, 105.19409179687501], 7);
 
 
 // Tile Layer
@@ -35,3 +40,18 @@ map.removeLayer(commune);
 L.control.layers(baseMaps, overlayMaps, { collapsed: true }).addTo(map);
 
 
+// create the sidebar instance and add it to the map
+var sidebar = L.control.sidebar({container: 'sidebar' })
+.addTo(map);
+// .open('home');
+
+// be notified when a panel is opened
+sidebar.on('content', function (ev) {
+    switch (ev.id) {
+        case 'autopan':
+        sidebar.options.autopan = true;
+        break;
+        default:
+        sidebar.options.autopan = false;
+    }
+});

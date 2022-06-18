@@ -5,7 +5,7 @@
 
 }
 .header{
-    min-height: 80vh;
+    min-height: 0vh;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(images/image-background.jpg);
     background-position: center;
@@ -101,13 +101,23 @@ nav .fa{
         cursor: pointer;
     }
     .nav-links ul{
-        padding: 20px;
+        padding: 30px;
 }}
+
+.body-map{
+    width: 90%;
+    margin: auto;
+    text-align: auto;
+    padding-top: 0;
+}
 
 .map{
     width: 100%;
     height: 75vh;
-    left: 0%; 
-    margin-left: 0px;
     z-index: 1;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
 }
+
+

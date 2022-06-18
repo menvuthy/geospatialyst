@@ -8,12 +8,21 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
 
-    <title>Geospatialyst</title>
     <link rel="stylesheet" href="map/style-map.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+
+    <!-- FullScreen plugins -->
+    <link rel="stylesheet" href="./map/plugins/fullscreen/Control.FullScreen.css" />
+    <script src="./map/plugins/fullscreen/Control.FullScreen.js"></script>
+
+    <!-- Sidebar -->
+    <link rel="stylesheet" href="./map/plugins/sidebar/leaflet-sidebar.css" />
+    <script src="./map/plugins/sidebar/leaflet-sidebar.js"></script>
+
 
     <title>Interactive Map</title>
     
@@ -29,23 +38,51 @@
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="projects.html">PROJECTS</a></li>
                     <li><a href="">SERVICES</a></li>
-                    <li><a href="">MAPS</a></li>
+                    <li><a href="map.html">MAPS</a></li>
                     <li><a href="" class="hero-btn-cntc">CONTACT</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
+    </section>
 
+
+<section class="body-map">
+        <!-- optionally define the sidebar content via HTML markup -->
+    <div id="sidebar" class="leaflet-sidebar collapsed">
+
+        <!-- nav tabs -->
+        <div class="leaflet-sidebar-tabs">
+            <!-- top aligned tabs -->
+            <ul role="tablist">
+                <li><a href="#home" role="tab"><i class="fa fa-bars"></i></a></li>
+            </ul>
+            <!-- <a href="#home" role="tab"><i class="fa fa-bars"></i></a> -->
+
+        </div>
+
+        <!-- panel content -->
+        <div class="leaflet-sidebar-content">
+            <div class="leaflet-sidebar-pane" id="home">
+                <h1 class="leaflet-sidebar-header">
+                    Interative Map
+                    <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
+                </h1>
+                <p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+
+    </div>
     <div class="map" id="map"></div>
+
 </section>
 
-
-
-
-
-<!-- ///////////////////////////////////////////////////////////////////////// -->
+    <!-- dataset path -->
     <script src="./map/data/river.js"></script>
     <script src="./map/data/commune-cambo.js"></script>
+
+    
+
     <!-- map must be at bottom -->
     <script src="./map/map.js"></script>
     
