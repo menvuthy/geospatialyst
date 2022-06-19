@@ -7,6 +7,8 @@ var map = new L.Map('map', {
   }).setView([12.248458308145507, 105.19409179687501], 7);
 
 
+
+
 // Tile Layer
 var Jawg_Dark = L.tileLayer('https://{s}.tile.jawg.io/jawg-dark/{z}/{x}/{y}{r}.png?access-token={accessToken}', {
 	attribution: '<a href="http://jawg.io" title="Tiles Courtesy of Jawg Maps" target="_blank">&copy; <b>Jawg</b>Maps</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors; created by Geospatialyst',
@@ -36,22 +38,7 @@ var baseMaps = {
 var overlayMaps = {
     'Commune Boundary': commune,
 };
-map.removeLayer(commune);
-L.control.layers(baseMaps, overlayMaps, { collapsed: true }).addTo(map);
+// map.removeLayer(commune);
+L.control.scale({position:'bottomright', metric: true}).addTo(map);
+L.control.layers(baseMaps, overlayMaps, {collapsed: true }).addTo(map);
 
-
-// create the sidebar instance and add it to the map
-var sidebar = L.control.sidebar({container: 'sidebar' })
-.addTo(map);
-// .open('home');
-
-// be notified when a panel is opened
-sidebar.on('content', function (ev) {
-    switch (ev.id) {
-        case 'autopan':
-        sidebar.options.autopan = true;
-        break;
-        default:
-        sidebar.options.autopan = false;
-    }
-});
