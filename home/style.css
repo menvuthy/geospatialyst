@@ -90,7 +90,7 @@ nav img{
 }
 .text-box p{
     margin: 10px 0 5px;
-    font-size: 25px;
+    font-size: 30px;
     color: rgb(196, 196, 196);
 }
 .hero-btn{
@@ -127,7 +127,7 @@ nav .fa{
         font-weight: 600;
     }
     .text-box p{
-        margin: 10px 0 10px;
+        margin: 10px 0 5px;
         font-size: 15px;
         color: rgb(179, 179, 179);
     }
