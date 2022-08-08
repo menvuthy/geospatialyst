@@ -117,10 +117,10 @@ nav .fa{
     .header{
         background-image: linear-gradient(rgba(1, 3, 10, 0.9), rgba(4,9,30,0.3)), url(images/background-img.jpg);
         background-position: 50% 25%;
-        background-attachment: scroll;
+        background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
-        width: 100%;/*might cause viewport problems*/
+        width: 100%;
         height: 100vh;
         margin: 0 auto;
     }
