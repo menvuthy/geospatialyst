@@ -116,6 +116,7 @@ nav .fa{
 @media(max-width: 700px){
     .header{
         background-position: center center;
+        background-attachment: scroll;
     }
     nav img{
         width: 100px;
