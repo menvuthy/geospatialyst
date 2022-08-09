@@ -529,52 +529,89 @@ p{
     overflow: hidden;
 }
 .project-col-img-1{
-    background: red;
-    background-image: url(images/gis-assistant.png);
-    background-position: center;
-    background-size: cover;
+    flex-basis: 30%;
+    background: #F4F6F7;
+    background-image: linear-gradient(rgba(1, 3, 10, 0.5), rgba(4,9,30,0.5)), url(images/gis-assistant.png);
+    border-radius: 10px;
+    margin-bottom: 2%;
+    padding: 20px 0px;
+    box-sizing: border-box;
     height: 60%;
     width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 .project-col-img-2{
-    background: red;
-    background-image: url(images/training.jpeg);
-    background-position: center;
-    background-size: cover;
+    flex-basis: 30%;
+    background: #F4F6F7;
+    background-image: linear-gradient(rgba(1, 3, 10, 0.5), rgba(4,9,30,0.5)), url(images/training.jpeg);
+    border-radius: 10px;
+    margin-bottom: 2%;
+    padding: 20px 0px;
+    box-sizing: border-box;
     height: 60%;
     width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 .project-col-img-3{
-    background: red;
-    background-image: url(images/data-collection.jpeg);
-    background-position: center;
-    background-size: cover;
+    flex-basis: 30%;
+    background: #F4F6F7;
+    background-image: linear-gradient(rgba(1, 3, 10, 0.5), rgba(4,9,30,0.5)), url(images/data-collection.jpeg);
+    border-radius: 10px;
+    margin-bottom: 2%;
+    padding: 20px 0px;
+    box-sizing: border-box;
     height: 60%;
     width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
 }
 .project-col-img-4{
-    background: red;
-    background-image: url(images/remote-sensing.png);
-    background-position: center;
-    background-size: cover;
+    flex-basis: 30%;
+    background: #F4F6F7;
+    background-image: linear-gradient(rgba(1, 3, 10, 0.5), rgba(4,9,30,0.5)), url(images/remote-sensing.png);
+    border-radius: 10px;
+    margin-bottom: 2%;
+    padding: 20px 0px;
+    box-sizing: border-box;
     height: 60%;
     width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 .project-col-img-5{
-    background: red;
-    background-image: url(images/deep-learning.png);
-    background-position: center;
-    background-size: cover;
+    flex-basis: 30%;
+    background: #F4F6F7;
+    background-image: linear-gradient(rgba(1, 3, 10, 0.5), rgba(4,9,30,0.5)), url(images/deep-learning.png);
+    border-radius: 10px;
+    margin-bottom: 2%;
+    padding: 20px 0px;
+    box-sizing: border-box;
     height: 60%;
     width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 .project-col-img-6{
-    background: red;
-    background-image: url(images/geospatial-data.jpeg);
-    background-position: center;
-    background-size: cover;
+    flex-basis: 30%;
+    background: #F4F6F7;
+    background-image: linear-gradient(rgba(1, 3, 10, 0.5), rgba(4,9,30,0.5)), url(images/geospatial-data.jpeg);
+    border-radius: 10px;
+    margin-bottom: 2%;
+    padding: 20px 0px;
+    box-sizing: border-box;
     height: 60%;
     width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 .layer {
     background: transparent;
@@ -616,54 +653,6 @@ p{
         margin-bottom: 0px;
         position: relative;
         overflow: hidden;
-    }
-    .project-col-img-1{
-        background: red;
-        background-image: url(images/gis-assistant.png);
-        background-position: center;
-        background-size: cover;
-        height: 60%;
-        width: 100%;
-    }
-    .project-col-img-2{
-        background: red;
-        background-image: url(images/training.jpeg);
-        background-position: center;
-        background-size: cover;
-        height: 60%;
-        width: 100%;
-    }
-    .project-col-img-3{
-        background: red;
-        background-image: url(images/data-collection.jpeg);
-        background-position: center;
-        background-size: cover;
-        height: 60%;
-        width: 100%;
-    }
-    .project-col-img-4{
-        background: red;
-        background-image: url(images/remote-sensing.png);
-        background-position: center;
-        background-size: cover;
-        height: 60%;
-        width: 100%;
-    }
-    .project-col-img-5{
-        background: red;
-        background-image: url(images/deep-learning.png);
-        background-position: center;
-        background-size: cover;
-        height: 60%;
-        width: 100%;
-    }
-    .project-col-img-6{
-        background: red;
-        background-image: url(images/geospatial-data.jpeg);
-        background-position: center;
-        background-size: cover;
-        height: 60%;
-        width: 100%;
     }
     .layer{
         background: transparent;
