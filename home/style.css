@@ -610,6 +610,61 @@ p{
         height: 150%;
         flex-direction: column;
     }
+    .project-col{
+        flex-basis: 30%;
+        border-radius: 10px;
+        margin-bottom: 0px;
+        position: relative;
+        overflow: hidden;
+    }
+    .project-col-img-1{
+        background: red;
+        background-image: url(images/gis-assistant.png);
+        background-position: center;
+        background-size: cover;
+        height: 60%;
+        width: 100%;
+    }
+    .project-col-img-2{
+        background: red;
+        background-image: url(images/training.jpeg);
+        background-position: center;
+        background-size: cover;
+        height: 60%;
+        width: 100%;
+    }
+    .project-col-img-3{
+        background: red;
+        background-image: url(images/data-collection.jpeg);
+        background-position: center;
+        background-size: cover;
+        height: 60%;
+        width: 100%;
+    }
+    .project-col-img-4{
+        background: red;
+        background-image: url(images/remote-sensing.png);
+        background-position: center;
+        background-size: cover;
+        height: 60%;
+        width: 100%;
+    }
+    .project-col-img-5{
+        background: red;
+        background-image: url(images/deep-learning.png);
+        background-position: center;
+        background-size: cover;
+        height: 60%;
+        width: 100%;
+    }
+    .project-col-img-6{
+        background: red;
+        background-image: url(images/geospatial-data.jpeg);
+        background-position: center;
+        background-size: cover;
+        height: 60%;
+        width: 100%;
+    }
     .layer{
         background: transparent;
         height: 60%;
