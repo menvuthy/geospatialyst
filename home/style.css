@@ -522,7 +522,9 @@ p{
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
-    padding: 20px;
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
 }
 .services-col{
@@ -555,18 +557,21 @@ p{
     color: black;
 }
 .posts h3{
-    text-align: center;
+    text-align: left;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
     margin: 10px 0;
     color: black;
 }
 .posts p{
+    text-align: left;
     color: grey;
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
-    padding: 20px;
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
 }
 .item{
@@ -583,7 +588,14 @@ p{
     border-radius: 10px;
 }
 
-
+@media(max-width: 700px){
+    .posts h3{
+        text-align: center;
+    }
+    .posts p{
+        text-align: center;    
+    }
+}
 
 
 /* Footer */
