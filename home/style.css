@@ -556,6 +556,15 @@ p{
     text-align: center;
     padding: 10px;
 }
+.tagline-2 h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500;
+    padding-top: 80px;
+    color: white;
+}
+
+
 
 /* ---- */
 .posts{
