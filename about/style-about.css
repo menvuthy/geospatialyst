@@ -6,7 +6,7 @@
 }
 .header{
     background-image: linear-gradient(#0a0a36a7, rgba(13, 22, 94, 0.191)), url("images/image-background.avif");
-    background-position: 50% 300%;
+    background-position: 50% 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
