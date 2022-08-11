@@ -331,6 +331,7 @@ p{
 .blog h1{
     font-size: 45px;
     font-weight: 500;
+    color: white;
 }
 .blog h2{
     font-size: 35px;
@@ -345,7 +346,7 @@ h3{
     color: white;
 }
 p{
-    color: grey;
+    color: #F4F6F7;
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
@@ -508,6 +509,56 @@ p{
         margin-bottom: 5%;
     }
 }
+
+/* ---- */
+.team{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.team h1{
+    font-size: 45px;
+    font-weight: 500;
+    color: black;
+}
+.team h2{
+    font-size: 35px;
+    font-weight: 500;
+    color: black;
+}
+h3{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    margin: 10px 0;
+    color: black;
+}
+p{
+    color: grey;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 20px;
+
+}
+/* .p-box{
+    margin: auto;
+    width: 70%;
+    text-align: center;
+}
+.row{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+} */
+
+.team .person-1{
+    
+}
+
+
 
 /* ---- */
 .services{
