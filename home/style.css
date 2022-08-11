@@ -115,7 +115,7 @@ nav .fa{
 
 @media(max-width: 700px){
     .header {
-        background-image: linear-gradient(rgba(17, 37, 109, 0.8), rgba(4, 11, 38, 0.708)), url("images/background-img.jpg");
+        background-image: linear-gradient(#0a0a36a7, rgba(13, 22, 94, 0.191)), url("images/background-img.jpg");
         background-position: 50% 25%;
         background-attachment: scroll;
         background-repeat: no-repeat;
