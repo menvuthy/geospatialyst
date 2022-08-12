@@ -5,8 +5,8 @@
 
 }
 .header{
-    background-image: linear-gradient(#0a0a36a7, rgba(13, 22, 94, 0.191)), url("images/background.png");
-    background-position: top;
+    background-image: linear-gradient(#0a0a36a7, rgba(13, 22, 94, 0.191)), url("images/background-image.png");
+    background-position: 0% -40%;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: contain;
@@ -127,7 +127,7 @@ nav .fa{
 
 @media(max-width: 700px){
     .header {
-        background-image: linear-gradient(#0a0a36a7, rgba(13, 22, 94, 0.191)), url("images/background.png");
+        background-image: linear-gradient(#0a0a36a7, rgba(13, 22, 94, 0.191)), url("images/background-image.png");
         background-position: right;
         background-attachment: scroll;
         background-repeat: no-repeat;
