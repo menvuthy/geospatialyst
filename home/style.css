@@ -174,7 +174,7 @@ nav .fa{
 .background-1{
     min-height: 50vh;
     width: 100%;
-    background-color: white;
+    background-color: #0a0a360f;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -224,7 +224,7 @@ p{
 }
 .tagline-col{
     flex-basis: 49%;
-    background: white;
+    background: none;
     border-radius: 10px;
     margin-bottom: 0%;
     padding: 0px 0px;
@@ -666,8 +666,9 @@ ul{
     margin-bottom: 25px;
     margin-top: 20px;
     font-weight: 500;
-    /* padding-top: 50px; */
     text-align: center;
+    color: white;
+    font-size: 15px;
 }
 .footer-col{
    width: 22%;
@@ -729,7 +730,11 @@ ul{
   .footer-col{
     width: 50%;
     margin-bottom: 30px;
-}
+    }
+    .footer p{
+        font-size: 12px;
+    }
+
 }
 @media(max-width: 574px){
   .footer-col{
