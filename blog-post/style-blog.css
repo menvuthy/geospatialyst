@@ -293,9 +293,6 @@ nav .fa{
 }
 
 @media(max-width: 700px){
-    .team{
-        width: 90%;
-    }
     .team h1{
         font-size: 25px;
     }
