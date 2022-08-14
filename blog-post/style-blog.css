@@ -292,6 +292,37 @@ nav .fa{
   border:1px solid #ccc;
 }
 
+@media(max-width: 700px){
+    .team{
+        width: 90%;
+    }
+    .team h1{
+        font-size: 25px;
+    }
+    .team p{
+        color: grey;
+        text-align:justify;
+        padding: 0px;
+    }
+    .team h3{
+        font-size: 20px;
+        padding: 20px;
+    }
+    .wrapper-1{
+        flex-direction: row;
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
+    .wrapper-1 #one { 
+        float: none;
+        margin-right:0;
+        width:auto;
+        border:0;
+    }
+
+}
+
+
 
 
 
