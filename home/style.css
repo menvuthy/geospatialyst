@@ -477,7 +477,7 @@ p{
         font-size: 25px;
     }
     .blog h2{
-        font-size: 22px;
+        font-size: 25px;
     }
     h3{
         text-align: center;
@@ -535,6 +535,14 @@ p{
 .services-col img{
     width: 100%;
     border-radius: 10px;
+}
+@media(max-width: 700px){
+    .services{
+        padding-top: 50px;
+    }
+    .services h2{
+        font-size: 25px;
+    }
 }
 
 /* Blog */
@@ -632,6 +640,12 @@ p{
 }
 
 @media(max-width: 700px){
+    .posts{
+        padding-top: 50px;
+    }
+    .posts h2{
+        font-size: 25px;
+    }
     .posts h3{
         text-align: center;
     }
