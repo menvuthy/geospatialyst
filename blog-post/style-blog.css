@@ -237,7 +237,7 @@ nav .fa{
     width: 80%;
     margin: auto;
     text-align: center;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 .team h1{
     font-size: 45px;
@@ -247,6 +247,11 @@ nav .fa{
 .team h3{
     font-size: 25px;
     font-weight: 500;
+    color: #0a0a36;
+}
+.team h4{
+    text-align: left;
+    padding: 20px;
     color: #0a0a36;
 }
 .team p{
@@ -264,12 +269,11 @@ nav .fa{
     padding: 20px;
 }
 .wrapper-1 { 
-  
   overflow:hidden;
-  padding-top: 50px;
+  padding-top: 20px;
   padding-bottom: 50px;
   display: flex;
-  border : 1px solid #000; 
+  /* border : 1px solid #000;  */
 }
 .wrapper-1 div {
    min-height: 200px;
@@ -278,29 +282,74 @@ nav .fa{
 .wrapper-1 #one {
   float:left; 
   margin-right:0px;
-  min-width: 60%;
-  border : 1px solid #000; 
+  width: 60%;
+  /* border : 1px solid #000;  */
 
+}
+.wrapper-1 #one p{
+  text-align: left;
 }
 .wrapper-1 #one img{
     width: 100%;
     border-radius: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .wrapper-1 #two { 
   background-color: none ;
+  width: 40%;
   overflow:hidden;
-  border:1px solid #ccc;
+  padding: 20px;
+  /* border:1px solid #ccc; */
+}
+.wrapper-1 #two h3{
+    font-size: 25px;
+    font-weight: 500;
+    color: #0a0a36;
+    text-align: left;
+    padding: 20px;
+}
+.wrapper-1 #two p{
+    text-align: left;
+}
+.wrapper-1 #two .hr-line{
+    border: 2px solid #0a0a36;
+}
+.list{
+    text-align: left;
+    color: grey;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 35px;
+    padding: 20px;
+}
+
+.list ul{
+    display: inline-block;
+    list-style-type: disc;
+    margin-left: 10%;
 }
 
 @media(max-width: 700px){
     .team h1{
         font-size: 25px;
     }
+    .team h4{
+        font-size: 15px;
+    }
     .team p{
         color: grey;
         text-align:justify;
-        padding: 0px;
+        padding-top: 20px;
     }
+    .wrapper-1 { 
+
+        padding-top: 0px;
+
+      }
+    .wrapper-1 #one p{
+        text-align: justify;
+      }
     .team h3{
         font-size: 20px;
         padding: 20px;
@@ -315,6 +364,15 @@ nav .fa{
         margin-right:0;
         width:auto;
         border:0;
+    }
+    .wrapper-1 #two { 
+        float: none;
+        margin-right:0;
+        width:auto;
+        border:0;
+    }
+    .wrapper-1 #two h3{
+        font-size: 20px;
     }
 
 }

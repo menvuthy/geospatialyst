@@ -226,6 +226,7 @@ nav .fa{
     }
     .blog{
         padding-top: 50px;
+        padding-bottom: 50px;
     }
     .blog h1{
         font-size: 25px;
@@ -323,12 +324,19 @@ nav .fa{
 }
 
 
-
-
 @media(max-width: 700px){
     .row{
         margin-top: 0%;
         flex-direction: column;
+    }
+    .project{
+        padding-top: 50px;
+    }
+    .project h1{
+        font-size: 25px;
+    }
+    .project h2{
+        font-size: 20px;
     }
     .project h3{
         font-size: 15px;
