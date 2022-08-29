@@ -259,6 +259,28 @@ nav .fa{
     background-repeat: no-repeat;
     background-attachment: scroll;
 }
+.background-4{
+    min-height: 50vh;
+    width: 100%;
+    /* background-color: #0a0a36; */
+    background-image: linear-gradient(#0a0a36c0, #0a0a36c0), url(images/satellite-image.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+.background-5{
+    min-height: 50vh;
+    width: 100%;
+    /* background-color: #0a0a36; */
+    background-image: linear-gradient(#0a0a36c0, #0a0a36c0), url(images/geospatial-data.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
 .service{
     width: 80%;
     margin: auto;
