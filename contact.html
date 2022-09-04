@@ -45,6 +45,7 @@
 </section>
 
 
+
 <section class="background-2">
     <section class="service">
         <div class="contact-section">
@@ -56,13 +57,18 @@
             </div>
             <div class="contact-form">
                 <h1>Get in touch with us</h1>
-                <form class="contact" action="" method="post">
+                <form class="contact" action="" method="post" onsubmit="sendEmail(); reset(); return false">
                     <input type="text" name="name" class="text-box-2" placeholder="Full name" required>
                     <input type="email" name="email" class="text-box-2" placeholder="Your email" required>
                     <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+                    <!-- alert message start -->
+                    <div class="alert-sucess">
+                        <span>Your message has been sent sucessfully! Thank you for contacting us.</span>
+                    </div>
                     <input type="submit" name="submit" class="send-btn" value="Send">
                 </form>
             </div>
+
         </div>
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18550.545326300424!2d104.92254452939886!3d11.566723458554474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2smv!4v1662278026609!5m2!1sen!2smv" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -125,6 +131,24 @@
     function  hideMenu(){
         navLinks.style.right = '-200px';
     } 
+</script>
+
+<!-- SmtpJS for email  -->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){   
+        Email.send({
+            Host : "smtp.elasticemail.com",
+            Username : "menvuthy94@gmail.com",
+            Password : "FABFB6319E5546EE33DDBD8E928F211D1CB0",
+            To : 'geospatialyst@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "New Contact Form",
+            Body : "And this is the body"
+        }).then(
+        message => alert(message)
+        );
+    }
 </script>
 </body>
 </html>

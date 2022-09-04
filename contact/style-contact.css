@@ -306,6 +306,24 @@ nav .fa{
 .map iframe{
     height: 450px;
 }
+.alert-sucess{
+    z-index: 1;
+    background-color: #e0f0d8;
+    font-size: 15px;
+    color: #456745;
+    padding: 20px 40px;
+    min-width: 420px;
+    height: 10px;
+    position: fixed;
+    left: 0;
+    /* top: 10px; */
+    bottom: 10px;
+    border-left: 8px solid #629261;
+    border-radius: 5px;
+}
+
+
+
 @media screen and (max-width: 950px){
     .contact-section{
         flex-direction: column;
