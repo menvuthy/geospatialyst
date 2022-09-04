@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geospatialyst</title>
+    <link rel="stylesheet" href="contact/style-contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="img/logo-for-black-background.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="what-we-do.html">WHAT WE DO</a></li>
+                    <li><a href="research.html">RESEARCH & PUBLICATION</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="contact.html" class="hero-btn-cntc">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<div class="text-box" >
+    <h1>
+        <font color="#BDC3C7">GEOSPATIALYST</font> | Contact Us
+    </h1>
+</div>
+<div class="text-box-mobile" >
+    <h1>
+        <font color="#BDC3C7">GEOSPATIALYST</font><br>Contact Us
+    </h1>
+</div>
+</section>
+
+
+<section class="background-2">
+    <section class="service">
+        <div class="contact-section">
+            <div class="contact-info">
+                <div><i class='far fa-map' style='font-size:24px'></i> Location: Phnom Penh, Cambodia</div>
+                <div><i class='far fa-envelope-open' style='font-size:24px'></i> Email: geospatialyst@gmail.com</div>
+                <div><i class='fas fa-phone' style='font-size:24px'></i> Phone Number: +855-77-676-461</div>
+                <div><i class='far fa-calendar-alt' style='font-size:24px'></i> Everyday, 8:00 AM - 6:00 PM</div>
+            </div>
+            <div class="contact-form">
+                <h1>Get in touch with us</h1>
+                <form class="contact" action="" method="post">
+                    <input type="text" name="name" class="text-box-2" placeholder="Full name" required>
+                    <input type="email" name="email" class="text-box-2" placeholder="Your email" required>
+                    <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+                    <input type="submit" name="submit" class="send-btn" value="Send">
+                </form>
+            </div>
+
+        </div>
+    </section>
+</section>
+
+
+<!-- Footer -->
+
+<!-- ----- -->
+<footer class="footer">
+    <div class="container-footer">
+        <div class="row-footer">
+            <div class="footer-col">
+                <h4>Geospatialyst</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="what-we-do.html">What We Do</a></li>
+                    <li><a href="research.html">Research & Publication</a></li>
+                    <li><a href="news.html">News</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a>Email: geospatialyst@gmail.com</a></li>
+                    <li><a>Tel: (KH) +855-77-676-461</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Location</h4>
+                <ul>
+                    <li><a>Phnom Penh, Cambodia</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/GeospatialystCambodia"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p>All Rights Reserved &copy; Geospatialyst</p>
+</footer>
+
+<!-- ///////////////////////////////////////////////////////////////////////// -->
+<!-- JavaScript for Toggle Menu -->
+<script>
+    var navLinks = document.getElementById('navLinks');
+    function  showMenu(){
+        navLinks.style.right = '0';
+    } 
+    function  hideMenu(){
+        navLinks.style.right = '-200px';
+    } 
+</script>
+</body>
+</html>
