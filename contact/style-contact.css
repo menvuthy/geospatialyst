@@ -225,6 +225,12 @@ nav .fa{
     font-size: 14px;
     /* border: 1px solid red; */
 }
+.contact-info .far{
+    font-size: medium;
+}
+.contact-info .fas{
+    font-size: medium;
+}
 .contact-info i{
     margin-right: 20px;
     font-size: 25px;
@@ -278,8 +284,8 @@ nav .fa{
      border: 1px solid grey;
      width: 120px;
      height: 35px;
-     font-size: 15px;
-     text-transform: capitalize;
+     font-size: 12px;
+     text-transform: uppercase;
      letter-spacing: 1px;
      border-radius: 5px;
      
@@ -292,6 +298,14 @@ nav .fa{
     transition-property: background;
 }
 
+.map{
+    margin: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.map iframe{
+    height: 450px;
+}
 @media screen and (max-width: 950px){
     .contact-section{
         flex-direction: column;
@@ -323,8 +337,17 @@ nav .fa{
     }
     .contact-form .send-btn{
         margin-right: 0px;
-        font-size: 12px;      
+        font-size: 10px;      
    }
+   .map{
+        margin: 0px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .map iframe{
+        height: 300px;
+    }
+   
 }
 
 
