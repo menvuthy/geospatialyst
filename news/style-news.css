@@ -6,11 +6,11 @@
 
 }
 .header{
-    background-image: linear-gradient(#0a0a36a7, rgba(13, 22, 94, 0.191)), url("images/background.jpeg");
-    background-position: bottom 0px right 0px;
+    background-image: linear-gradient(#0a0a36a7, rgba(13, 22, 94, 0.191)), url("images/background.png");
+    background-position: bottom 160px right 0px;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     width: 100%; /*might cause viewport problems*/
     height: 50vh;
     margin: 0 auto;
@@ -128,7 +128,7 @@ nav .fa{
 @media only screen and (max-width: 700px){ 
 /* @media(max-width: 700px){ */
     .header {
-        background-image: linear-gradient(#0a0a36a7, rgba(13, 22, 94, 0.191)), url("images/background.jpeg");
+        background-image: linear-gradient(#0a0a36a7, rgba(13, 22, 94, 0.191)), url("images/background.png");
         background-position: center;
         background-attachment: scroll;
         background-repeat: no-repeat;
