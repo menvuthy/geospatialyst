@@ -457,6 +457,7 @@ p{
     box-shadow: 0 0 30px 0px white;
     transition: 0.5s;
 }
+
 @media(max-width: 700px){
     .background-2{
         background-attachment: fixed;
@@ -478,6 +479,21 @@ p{
     }
     .blog h2{
         font-size: 25px;
+    }
+    .blog-col-2{
+        margin-top: 10%;
+    }
+    .blog-col-3{
+        margin-top: 10%;
+    }
+    .blog-col-4{
+        margin-top: 10%;
+    }
+    .blog-col-5{
+        margin-top: 10%;
+    }
+    .blog-col-6{
+        margin-top: 10%;
     }
     h3{
         text-align: center;
