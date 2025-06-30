@@ -18,21 +18,39 @@ var Jawg_Dark = L.tileLayer('https://{s}.tile.jawg.io/jawg-dark/{z}/{x}/{y}{r}.p
 	accessToken: 'wMEmropxqcsYlDx4SuPcdYeiHzjdaoX6co0HBAxfeupmdQ9D7MlyvQV6zqr3pZHH'
 }).addTo(map);
 
-// Adding GeoJSON
+// // Adding GeoJSON
+// var options = {
+//     style:{
+//         opacity: 1,
+//         weight: 1,
+//         color: 'yellow',
+//     }
+// };
+
+// Adding GeoJSON with popup
 var options = {
-    style:{
+    style: {
         opacity: 1,
         weight: 1,
         color: 'yellow',
+    },
+    onEachFeature: function (feature, layer) {
+        if (feature.properties && feature.properties.Shape_Area) {
+            layer.bindPopup("Shape Area: " + feature.properties.Shape_Area);
+        }
     }
 };
+
+var commune = L.geoJSON(communeJSON, options).addTo(map);
+
+
 var commune = L.geoJSON(communeJSON, options).addTo(map);
 
     /*==============================================
                     LAYER CONTROL
     ================================================*/
 var baseMaps = {
-    "Jawg Dark": Jawg_Dark,
+    "Basemap": Jawg_Dark,
 };
 
 var overlayMaps = {
