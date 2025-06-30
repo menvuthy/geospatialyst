@@ -20,7 +20,18 @@ var options = {
         color: 'yellow',
     }
 };
+
+// Adding GeoJSON
+var option2 = {
+    style:{
+        opacity: 1,
+        weight: 5,
+        color: 'blue',
+    }
+};
+
 var commune = L.geoJSON(communeJSON, options).addTo(map2);
+var river = L.geoJSON(riverJSON, option2).addTo(map2);
 
     /*==============================================
                     LAYER CONTROL
